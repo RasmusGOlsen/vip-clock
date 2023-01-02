@@ -7,6 +7,7 @@ class configuration extends uvm_object;
 
     `uvm_object_utils(clock::configuration)
 
+    virtual clock_if vif;
     uvm_active_passive_enum is_active = UVM_ACTIVE;
     state_e init_state = RUNNING;
 
